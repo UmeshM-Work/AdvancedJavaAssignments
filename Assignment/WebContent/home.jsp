@@ -33,11 +33,12 @@
 	<%
 		}
 	%>
-
+<form action="logout.jsp">
+<input type="submit" value=logout style="border:solid 3px;border-radius:10px"></form>
 
 </body>
 </html>
 <%}else{
-	response.sendRedirect("login.jsp");
+	response.sendRedirect("login_form.jsp");
 }
-	%><a href="logout.jsp"><input type="button" value=logout style="border:solid 3px;border-radius:10px"></a>
+	%>

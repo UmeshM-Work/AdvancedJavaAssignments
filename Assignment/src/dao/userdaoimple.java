@@ -68,7 +68,7 @@ public class userdaoimple implements userdao {
 		ArrayList<User> al = new ArrayList<>();
 		try {
 		Connection con = MyCon.getConn();
-		PreparedStatement s = con.prepareStatement("select * from expense where user_name = ?");
+		PreparedStatement s = con.prepareStatement("select * from user2 where user_name = ?");
 		s.setString(1, user_name);
 		ResultSet rs = s.executeQuery();
 		while(rs.next()) {
